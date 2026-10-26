@@ -40,7 +40,7 @@ Ikuti langkah-langkah berikut untuk menjalankan repositori ini pada *environment
 
 ```bash
 git clone https://github.com/username-anda/electrohub.git
-cd inventory-sales
+cd electrohub
 ```
 
 ### Langkah 2: Instal Dependensi Backend
