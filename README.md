@@ -210,7 +210,7 @@ Aplikasi ini mengimplementasikan aturan bisnis dan standar keamanan data transak
 
 ## 9. Profil Pengembang
 
-* **Pengembang:** [Nama Anda]
+* **Pengembang:**
 * **Peran:** Full Stack Developer
-* **Repositori:** [Link GitHub Repositori]
-* **Kontak / Portofolio:** [Email / LinkedIn / Website]
+* **Repositori:**
+* **Kontak / Portofolio:** 
