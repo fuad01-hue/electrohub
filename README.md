@@ -118,6 +118,15 @@ Akses aplikasi melalui peramban di: `http://127.0.0.1:8000`
 
 Struktur basis data dirancang dengan normalisasi penuh (3NF) dan menggunakan storage engine **InnoDB** untuk menjamin *referential integrity* melalui relasi *Foreign Key* dan *Cascading Rules*.
 
+### Visualisasi Antarmuka Sistem
+
+![Manajemen Invertaris Owner](docs/manajemen-inventatis-owner.png)
+![Etalase Catalog Customer](docs/catalog-customer.png)
+
+### Dashboard Owner
+
+![Dashboard Eksekutif Owner](docs/dashboard-owner.png)
+
 ### Visual Diagram ERD
 
 ![ElectroHub Entity Relationship Diagram](docs/erd-electrohub.png)
