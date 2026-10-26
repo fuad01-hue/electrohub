@@ -69,7 +69,7 @@ APP_URL=http://127.0.0.1:8000
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=inventory_sales
+DB_DATABASE=electrohub
 DB_USERNAME=root
 DB_PASSWORD=
 ```
