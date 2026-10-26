@@ -110,8 +110,9 @@ Akses aplikasi melalui peramban di: `http://127.0.0.1:8000`
 
 | Peran (Role) | Email Login | Password Default | Batasan Hak Akses (Server-Side Protected) |
 | --- | --- | --- | --- |
-| **Owner / Admin** | `owner@electrohub.com` | `password` / `password123` | Akses penuh: Kelola staf/user, CRUD master data, input Stock-In & Sales, pembatalan transaksi, audit laporan finansial eksekutif. |
+| **Owner / Admin** | `owner@electrohub.com` | `password` / `password1` | Akses penuh: Kelola staf/user, CRUD master data, input Stock-In & Sales, pembatalan transaksi, audit laporan finansial eksekutif. |
 | **Staff / Kasir** | `staff@electrohub.com` | `password` / `password123` | Input transaksi pembelian (*Stock-In*), melayani kasir (*Sales*), cek ketersediaan stok produk. Ditolak dari menu manajemen akun dan penghapusan data master. |
+|**Customer / Customer** | `customer@electrohub.com` | `password` / `password123` |
 
 ## 5. Database Architecture & Entity Relationship Diagram (ERD)
 
