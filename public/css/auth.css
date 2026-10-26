@@ -1,0 +1,92 @@
+:root {
+    --brand-primary: #1d4ed8;
+    --brand-hover: #1e40af;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #ffffff;
+    color: var(--text-main);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+}
+
+.visual-pane {
+    background-color: #f8fafc;
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+}
+
+.illustration-box {
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
+    background-color: #ffffff;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-control {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 0.92rem;
+    color: var(--text-main);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+}
+
+.btn-brand {
+    background-color: var(--brand-primary);
+    border: none;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.btn-brand:hover {
+    background-color: var(--brand-hover);
+    color: #ffffff;
+}
+
+.toggle-password {
+    cursor: pointer;
+    border-left: none;
+    background: transparent;
+    color: #94a3b8;
+}
+
+.toggle-password:hover {
+    color: #475569;
+}

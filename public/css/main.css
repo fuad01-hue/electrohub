@@ -1,0 +1,170 @@
+/* 1. Mencegah judul tertutup navbar saat anchor menu diklik */
+#produk-pilihan,
+#keunggulan {
+    scroll-margin-top: 100px;
+}
+
+/* 2. Kartu Showcase & Katalog Produk (Efek Timbul saat Hover) */
+.showcase-card,
+.product-card {
+    position: relative;
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.28s ease;
+}
+
+.showcase-card:hover,
+.product-card:hover {
+    position: relative;
+    z-index: 10;
+    transform: translateY(-8px);
+    box-shadow: 0 22px 35px -8px rgba(15, 23, 42, 0.12), 
+                0 8px 16px -4px rgba(15, 23, 42, 0.05);
+    border-color: #cbd5e1;
+}
+
+/* 3. Wadah Gambar Produk */
+.showcase-img-box,
+.product-img-wrapper,
+.card-img-box {
+    width: 100%;
+    height: 200px;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    position: relative;
+    overflow: hidden !important;
+}
+
+/* 4. Pembatas & Zoom Halus Gambar saat Hover */
+.showcase-img,
+.product-img,
+.product-img-wrapper img,
+.product-card img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.35s ease;
+}
+
+.showcase-card:hover .showcase-img,
+.product-card:hover .product-img,
+.product-card:hover img {
+    transform: scale(1.06);
+}
+
+/* 5. Posisi Badge (Tetap di Atas Gambar) */
+.showcase-badge-container,
+.product-badge-container {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+}
+
+/* Penapis Kategori Jenis Kapsul (Pill Filter) */
+.filter-scroll-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+}
+
+.filter-scroll-container::-webkit-scrollbar {
+    height: 4px;
+}
+
+.filter-scroll-container::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.filter-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #475569;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+    color: #0f172a;
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+.filter-pill.active {
+    color: #ffffff !important;
+    background-color: #0f172a !important;
+    border-color: #0f172a !important;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12);
+}
+
+.filter-count-badge {
+    font-size: 0.72rem;
+    padding: 2px 7px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-pill:not(.active) .filter-count-badge {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+/* Lencana Ketersediaan Stok Dinamik */
+.badge-stock-ready {
+    background-color: #dcfce7 !important;
+    color: #15803d !important;
+    border: 1px solid #bbf7d0 !important;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.badge-stock-urgent {
+    background-color: #fee2e2 !important;
+    color: #b91c1c !important;
+    border: 1px solid #fecaca !important;
+    font-size: 0.72rem;
+    font-weight: 600;
+    animation: pulseAlert 2s infinite ease-in-out;
+}
+
+.badge-stock-empty {
+    background-color: #f1f5f9 !important;
+    color: #64748b !important;
+    border: 1px solid #cbd5e1 !important;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+@keyframes pulseAlert {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
