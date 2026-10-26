@@ -39,7 +39,7 @@ Ikuti langkah-langkah berikut untuk menjalankan repositori ini pada *environment
 ### Langkah 1: Klon Repositori
 
 ```bash
-git clone https://github.com/username-anda/inventory-sales.git
+git clone https://github.com/username-anda/electrohub.git
 cd inventory-sales
 ```
 
